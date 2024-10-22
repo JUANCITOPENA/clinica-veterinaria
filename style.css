@@ -1,0 +1,26 @@
+body {
+    padding-top: 56px; /* Espacio para el menú fijo */
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+footer a {
+    font-size: 1.5rem;
+}
+
+blockquote {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+}

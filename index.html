@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Clínica Veterinaria</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Nuestro Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">¡Bienvenido a nuestra Clínica Veterinaria!</h1>
+            <p class="lead">Cuidamos a tus mascotas con amor y profesionalismo. Servicios veterinarios de alta calidad para perros, gatos y otros animales.</p>
+            <img src="https://img.freepik.com/vector-gratis/veterinario-muchos-tipos-animales_1308-65733.jpg" alt="Veterinaria" class="img-fluid">
+            <a href="#contacto" class="btn btn-primary mt-4">Pide una Cita</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://png.pngtree.com/png-clipart/20200701/original/pngtree-online-doctor-consultation-png-image_5418613.jpg" class="card-img-top" alt="Consulta general">
+                    <div class="card-body">
+                        <h5 class="card-title">Consulta General</h5>
+                        <p class="card-text">Atendemos las necesidades básicas de tu mascota para garantizar su bienestar.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Agregar más servicios -->
+        </div>
+    </section>
+
+    <!-- Sección de Nuestro Equipo -->
+    <section id="equipo" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.milenio.com/WKx4b_5TscGv5RQhY_UFTLPhwDE=/345x194/uploads/media/2016/01/26/damos-opciones-necesitas-urgencia-hospital.jpeg" class="card-img-top" alt="Veterinario 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Juan Pérez</h5>
+                            <p class="card-text">Especialista en medicina general y cirugías.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agregar más veterinarios -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="container my-5">
+        <h2 class="text-center mb-4">Testimonios de Clientes</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p>"Excelente atención, salvaron la vida de mi perrito. Los recomiendo 100%."</p>
+                    <footer class="blockquote-footer">Carlos López</footer>
+                </blockquote>
+            </div>
+            <!-- Agregar más testimonios -->
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="container py-5">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Teléfono: (809) 123-4567</h5>
+                <p>Email: contacto@clinicaveterinaria.com</p>
+                <p>Dirección: Calle 123, Ciudad, País</p>
+                <p>Horarios: Lunes a Viernes 8:00 AM - 6:00 PM</p>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15138.441009815197!2d-69.96693295000001!3d18.455997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sdo!4v1729555594007!5m2!1ses-419!2sdo" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <p class="mb-0">&copy; 2024 Clínica Veterinaria. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
