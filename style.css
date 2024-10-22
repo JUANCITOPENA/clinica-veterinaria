@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     padding-top: 56px; /* Espacio para el menú fijo */
 }
@@ -11,16 +12,135 @@ body {
     object-fit: cover;
 }
 
+/* Footer */
 footer {
     background-color: #343a40;
+    padding: 20px 0;
 }
 
 footer a {
     font-size: 1.5rem;
+    margin: 0 10px;
 }
 
 blockquote {
     background-color: #f8f9fa;
     padding: 15px;
     border-left: 5px solid #007bff;
+}
+
+/* Asegura que las imágenes no se salgan de los contenedores */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* Centra las tarjetas en dispositivos móviles */
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .jumbotron {
+        padding: 30px 20px;
+    }
+
+    h1.display-4 {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    blockquote {
+        font-size: 0.9rem;
+    }
+
+    footer p, footer a {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Estilo para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .jumbotron {
+        padding: 60px 40px;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+    }
+
+    footer p, footer a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilo para pantallas grandes (PCs, SmartTV) */
+@media (min-width: 1025px) {
+    .jumbotron {
+        padding: 100px 60px;
+    }
+
+    .display-4 {
+        font-size: 3rem;
+    }
+
+    .lead {
+        font-size: 1.5rem;
+    }
+
+    footer p, footer a {
+        font-size: 1.5rem;
+    }
+
+    .card img {
+        height: 250px;
+    }
+}
+
+/* Ajustes para pantallas extra grandes */
+@media (min-width: 1440px) {
+    .jumbotron {
+        padding: 120px 80px;
+    }
+
+    .display-4 {
+        font-size: 3.5rem;
+    }
+
+    .lead {
+        font-size: 1.75rem;
+    }
+
+    footer p, footer a {
+        font-size: 1.75rem;
+    }
 }
